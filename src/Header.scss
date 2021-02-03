@@ -1,0 +1,44 @@
+.Header {
+  height: 100vh;
+}
+
+.welcome-message-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  color: black;
+}
+
+.wrap{
+  perspective-origin: 50% 50%;
+  overflow-x: hidden;
+}
+
+.svg{
+  position:absolute;
+  bottom: -50vh;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+}
+
+$total: 10;
+@for $i from 1 through $total {
+  $scale:random(2) - .4;
+  
+  .svg:nth-child(#{$i}){
+    left:random(120) * 1% - 20;
+    animation: raise#{$i} 6 + random(15) +s linear infinite;
+    animation-delay:random(5) - 5 + s;
+    transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+    z-index: - $i - 7;
+
+    @keyframes raise#{$i} {
+      to{
+       bottom:150vh;
+       transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+      }
+    }
+  }
+}
