@@ -10,6 +10,9 @@ const Portfolio = () => {
         <ProjectTile onClick={()=>console.log("lol")}/>
         <ProjectTile />
         <ProjectTile />
+        <ProjectTile />
+        <ProjectTile />
+        <ProjectTile />
       </div>
     </div>
   );

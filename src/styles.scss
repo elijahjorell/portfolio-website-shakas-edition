@@ -17,6 +17,7 @@
   top: 50%;
   transform: translateY(-50%);
   margin-left: 50px;
+  width: 100px;
 }
 
 .links-container {
@@ -51,21 +52,22 @@
 }
 
 .Portfolio {
-  height: 1500px;
   background: rgba(245,245,245,1);
+  padding-bottom: 300px;
 }
 
 .portfolio-content {
   margin: auto;
   display: flex;
   justify-content: center;
-  max-width: 750px;
+  max-width: 1200px;
   flex-wrap: wrap;
 }
 
 .ProjectTile {
-  height: 250px;
-  width: 250px;
+  padding: 50px;
+  height: 300px;
+  width: 400px;
   border: 1px solid black;
 }
 
