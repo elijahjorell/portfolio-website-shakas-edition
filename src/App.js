@@ -11,6 +11,7 @@ const App = () => {
     <div className="App">
       <Header />
       <DarkNavbar />
+      <div className="gradient-vertical"/>
       <Portfolio />
       <Footer />
     </div>

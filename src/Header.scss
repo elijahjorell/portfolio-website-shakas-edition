@@ -1,5 +1,6 @@
 .Header {
   height: 100vh;
+  
 }
 
 .welcome-message-box {
@@ -13,15 +14,20 @@
 
 .wrap{
   perspective-origin: 50% 50%;
+  top: 100vh;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  * {
+    overflow-x: hidden;
+  }
 }
 
 .svg{
   position:absolute;
   bottom: -100vh;
   transform-style: preserve-3d;
-  * {
-    overflow-x: hidden;
-  }
+  
 }
 
 $total: 10;
@@ -33,7 +39,7 @@ $total: 10;
     animation: raise#{$i} 6 + random(15) +s linear infinite;
     animation-delay:random(5) - 5 + s;
     transform: scale(.3 * $i - .6) rotate(random(360) + deg);
-    z-index: - $i - 7;
+    z-index: 100 - $i - 7;
 
     @keyframes raise#{$i} {
       to{
