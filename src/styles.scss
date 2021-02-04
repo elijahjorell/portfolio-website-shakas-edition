@@ -71,6 +71,16 @@
   border: 1px solid black;
 }
 
+.modal-content {
+  border: none !important;
+}
+
+.dummy-image {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+
 .Footer {
   height: 500px;
   background: red;
