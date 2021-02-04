@@ -13,14 +13,15 @@
 
 .wrap{
   perspective-origin: 50% 50%;
-  overflow-x: hidden;
 }
 
 .svg{
   position:absolute;
-  bottom: -50vh;
+  bottom: -100vh;
   transform-style: preserve-3d;
-  overflow-x: hidden;
+  * {
+    overflow-x: hidden;
+  }
 }
 
 $total: 10;
