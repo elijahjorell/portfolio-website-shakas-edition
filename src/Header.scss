@@ -1,6 +1,5 @@
 .Header {
-  height: 100vh;
-  
+  height: 30vh;
 }
 
 .welcome-message-box {
@@ -25,7 +24,7 @@
 
 .svg{
   position:absolute;
-  bottom: -100vh;
+  bottom: -120vh;
   transform-style: preserve-3d;
   
 }
@@ -39,7 +38,7 @@ $total: 10;
     animation: raise#{$i} 6 + random(15) +s linear infinite;
     animation-delay:random(5) - 5 + s;
     transform: scale(.3 * $i - .6) rotate(random(360) + deg);
-    z-index: 100 - $i - 7;
+    z-index: - $i - 7;
 
     @keyframes raise#{$i} {
       to{

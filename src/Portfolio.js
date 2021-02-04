@@ -4,7 +4,8 @@ import ProjectTile from "./ProjectTile";
 const Portfolio = () => {
   return (
     <div className="Portfolio">
-      <h1>Projects</h1>
+      <h1>PROJECTS</h1>
+      <h1>-</h1>
       <div className="portfolio-content">
         <ProjectTile onClick={()=>console.log("lol")}/>
         <ProjectTile />

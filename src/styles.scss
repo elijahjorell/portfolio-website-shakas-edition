@@ -47,11 +47,11 @@
 
 .gradient-vertical {
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%, rgba(245,245,245,1) 80%);
-  height: 500px;
+  height: 1000px;
 }
 
 .Portfolio {
-  height: 1000px;
+  height: 1500px;
   background: rgba(245,245,245,1);
 }
 
@@ -67,6 +67,11 @@
   height: 250px;
   width: 250px;
   border: 1px solid black;
+}
+
+.Footer {
+  height: 500px;
+  background: red;
 }
 
 

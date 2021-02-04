@@ -9,8 +9,8 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <div className="App">
-      <Header />
       <DarkNavbar />
+      <Header />
       <div className="gradient-vertical"/>
       <Portfolio />
       <Footer />
