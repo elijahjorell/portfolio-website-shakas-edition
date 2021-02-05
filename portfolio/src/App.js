@@ -2,14 +2,14 @@ import React from "react";
 import "./styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
-import DarkNavbar from "./DarkNavbar";
+import SideNavbar from "./SideNavbar";
 import Portfolio from "./Portfolio";
 import Footer from "./Footer";
 
 const App = () => {
   return (
     <div className="App">
-      <DarkNavbar />
+      <SideNavbar />
       <Header />
       <div className="gradient-vertical"/>
       <Portfolio />

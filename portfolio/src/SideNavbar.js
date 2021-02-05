@@ -1,9 +1,9 @@
 import React from "react";
 import Shakas from "./Shakas";
 
-const DarkNavbar = () => {
+const SideNavbar = () => {
   return (
-    <div className="DarkNavbar">
+    <div className="SideNavbar">
       <div className="round-side round-side-up" />
       <div className="links-container">
         <Shakas/>
@@ -15,4 +15,4 @@ const DarkNavbar = () => {
   );
 };
 
-export default DarkNavbar;
+export default SideNavbar;

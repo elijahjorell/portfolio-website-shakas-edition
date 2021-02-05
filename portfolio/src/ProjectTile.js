@@ -1,6 +1,6 @@
 import { React, useState } from "react";
-import { Modal, Button, Card } from "react-bootstrap";
-import { LetsEat } from "./LetsEat.png";
+import {Modal, Button, Card, Image} from "react-bootstrap";
+import LetsEatAt from "./LetsEatAt.png";
 
 const ProjectTile = () => {
   const [show, setShow] = useState(false);
@@ -10,19 +10,22 @@ const ProjectTile = () => {
 
   return (
     <div className="ProjectTile">
-      <h3>My Project</h3>
-      <h5>Tech Stack</h5>
-      <br/>
-      <br/>
-      <br/>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+      <Image className="project-tile-image" src={LetsEatAt} fluid/>
+      <div className="project-tile-overlay">
+        <h3>My Project</h3>
+        <h5>Tech Stack</h5>
+        <br/>
+        <br/>
+        <br/>
+        <Button variant="primary" onClick={handleShow}>
+          More Details
+        </Button>
+      </div>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Body style={{ padding: "0", border: "none" }}>
           <Card style={{ width: "100%", border: "none", height: "500px" }}>
-            <div className="dummy-image"/>
+            <Image src={LetsEatAt}/>
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>

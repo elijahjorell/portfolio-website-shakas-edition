@@ -12,7 +12,7 @@
   overflow-x: visible;
 }
 
-.DarkNavbar {
+.SideNavbar {
   position: sticky;
   top: 50%;
   transform: translateY(-50%);
@@ -68,22 +68,43 @@
   padding: 50px;
   height: 300px;
   width: 400px;
-  border: 1px solid black;
+  position: relative;
+}
+
+.project-tile-image {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.project-tile-overlay {
+  background-color: rgba(245,245,245,1);
+  padding: 50px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.project-tile-overlay:hover {
+  opacity: 1;
 }
 
 .modal-content {
   border: none !important;
+
 }
 
-.dummy-image {
-  width: 100%;
-  height: 200px;
-  background-color: red;
+.card-body {
+  background-color: rgba(245,245,245,1) !important;
 }
 
 .Footer {
   height: 500px;
-  background: red;
+  background: #3B3838;
 }
 
 
