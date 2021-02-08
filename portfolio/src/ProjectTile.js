@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import {Modal, Button, Card, Image} from "react-bootstrap";
-import LetsEatAt from "./LetsEatAt.png";
 
 const ProjectTile = (props) => {
   const [show, setShow] = useState(false);
@@ -27,7 +26,7 @@ const ProjectTile = (props) => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Body style={{ padding: "0", border: "none" }}>
           <Card style={{ width: "100%", border: "none", height: "500px" }}>
-            <Image src={LetsEatAt}/>
+            <Image src={props.image}/>
             <div>
               <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
@@ -46,21 +45,21 @@ const ProjectTile = (props) => {
 
                 <div className="buttons">
                 {
-                  props.hasOwnProperty("webAppLink") ? (
+                  props["webAppLink"] ? (
                     <Button variant="primary" onClick={handleWebAppLinkClick} style={{marginRight: "15px"}}>
-                      View Web App
+                      View Demo
                     </Button>
                   ) : (
                     <div />
                   )
                 }
                 {
-                  props.hasOwnProperty("repoLink") ? (
+                  props["repoLink"] ? (
                     <Button variant="outline-primary" onClick={handleRepoLinkClick}>
                       View Repo
                     </Button>
                   ) : (
-                      <div />
+                    <div />
                   )
                 }
                   <Button variant="secondary" onClick={handleClose} style={{position: "absolute", right: "20px"}}>

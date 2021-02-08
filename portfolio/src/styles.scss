@@ -59,7 +59,7 @@ html {
   margin: auto;
   display: flex;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1210px;
   flex-wrap: wrap;
 }
 
@@ -68,6 +68,7 @@ html {
   height: 300px;
   width: 400px;
   position: relative;
+  margin: 1px;
 }
 
 .project-tile-image {
